@@ -234,6 +234,8 @@ multiInputOptions: [{usernameOptions}, {passwordOptions}] could return ["Jack", 
 
 Must specify selectOptions with valid entries in **one** of the following format:
 
+Every input is assigned an id 'data', see #custombutton to see and example its implication
+
 ```javascript
  multiInputOptions: [{myinputoptions1}, {myinputoptions2}]
 ```
@@ -340,6 +342,8 @@ module.exports = () => {
 ### Custom/Extra Button (optional)
 
 Adds an extra/custom button with special functionalities other than success or error. Passing a `label` will update the button's innerHTML, `click` should be a funtion which will execute **onclick**, lastly `attrs` should contain all the attributes that should be added to the button such as custom styles.
+
+If using typescript, set 'target' to 'ES2017' ![read here](https://www.claritician.com/puppeteer-evaluation-failed-referenceerror-awaiter-is-not-defined)
 
  <details>
   <summary> Code Example </summary>
